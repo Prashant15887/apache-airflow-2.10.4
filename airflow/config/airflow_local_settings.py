@@ -24,6 +24,8 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
 
+from markupsafe import Markup
+
 from airflow.configuration import conf
 from airflow.exceptions import AirflowException
 
@@ -366,6 +368,9 @@ STATE_COLORS = {
     "upstream_failed": "orange",
 }
 
-DASHBOARD_UIALERTS = [
-    UIAlert("Welcome to Airflow"),
-]
+#DASHBOARD_UIALERTS = [
+    #UIAlert("Welcome to Airflow"),
+    #UIAlert("Airflow update happening next week", category="warning", roles=["User"]),
+    #UIAlert('Visit <a href="https://airflow.apache.org">airflow.apache.org</a>', html=True),
+    #UIAlert(Markup("Welcome <em>%s</em>") % ("John & Jane Doe",)),
+#]
