@@ -1,7 +1,6 @@
 from airflow.utils.timezone import datetime
-# from custom_operator.hello_operator_test import HelloOperator
 from airflow.models.dag import DAG
-from custom_operator.hello_operator_test import MyHelloOperator
+from custom_operators.hello_operator_test import MyHelloOperator
 
 with DAG(
     "custom_operator_test",

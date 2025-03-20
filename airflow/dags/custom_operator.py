@@ -1,5 +1,5 @@
 from airflow.utils.timezone import datetime
-from custom_operator.hello_operator import HelloOperator
+from custom_operators.hello_operator import HelloOperator
 from airflow.models.dag import DAG
 
 with DAG(

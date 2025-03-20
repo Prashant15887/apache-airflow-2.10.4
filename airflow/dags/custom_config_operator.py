@@ -1,6 +1,6 @@
 from airflow.models.dag import DAG
 from airflow.utils.timezone import datetime
-from custom_operator.configuration_operator import MyConfigOperator
+from custom_operators.configuration_operator import MyConfigOperator
 
 with DAG(
     dag_id="custom_config_operator",
